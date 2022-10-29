@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "types": ["cypress", "@testing-library/cypress"],
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noImplicitReturns": true,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "cypress", "testing"],
+  "exclude": ["node_modules", "dist"]
+}

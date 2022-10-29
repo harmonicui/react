@@ -1,0 +1,5 @@
+{
+  "report-dir": "./coverage/cypress",
+  "temp-dir": "./coverage/.nyc_output",
+  "reporter": ["html", "text"]
+}
