@@ -6,7 +6,7 @@ specifiers:
   '@cypress/code-coverage': ^3.10.0
   '@dom-assertions/cypress-dom': ^0.1.0
   '@testing-library/cypress': ^8.0.3
-  '@testing-library/jest-dom': ^5.16.5
+  '@testing-library/jest-dom': ^6.0.0
   '@testing-library/react': ^13.4.0
   '@types/node': ^18.11.7
   '@types/react': ^18.0.24
@@ -37,7 +37,7 @@ devDependencies:
   '@cypress/code-coverage': 3.10.0_cypress@11.2.0
   '@dom-assertions/cypress-dom': 0.1.0
   '@testing-library/cypress': 8.0.3_cypress@11.2.0
-  '@testing-library/jest-dom': 5.16.5
+  '@testing-library/jest-dom': 6.0.1_vitest@0.25.3
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/node': 18.11.7
   '@types/react': 18.0.24
@@ -906,19 +906,33 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/jest-dom/5.16.5:
-    resolution: {integrity: sha512-N5ixQ2qKpi5OLYfwQmUb/5mSV9LneAcaUfp32pn4yCnpb8r/Yz0pXFPck21dIicKmi+ta5WRAknkZCfA8refMA==}
-    engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
+  /@testing-library/jest-dom/6.0.1_vitest@0.25.3:
+    resolution: {integrity: sha512-0hx/AWrJp8EKr8LmC5jrV3Lx8TZySH7McU1Ix2czBPQnLd458CefSEGjZy7w8kaBRA6LhoPkGjoZ3yqSs338IQ==}
+    engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
+    peerDependencies:
+      '@jest/globals': '>= 28'
+      '@types/jest': '>= 28'
+      jest: '>= 28'
+      vitest: '>= 0.32'
+    peerDependenciesMeta:
+      '@jest/globals':
+        optional: true
+      '@types/jest':
+        optional: true
+      jest:
+        optional: true
+      vitest:
+        optional: true
     dependencies:
       '@adobe/css-tools': 4.0.1
       '@babel/runtime': 7.20.0
-      '@types/testing-library__jest-dom': 5.14.5
       aria-query: 5.1.2
       chalk: 3.0.0
       css.escape: 1.5.1
       dom-accessibility-api: 0.5.14
       lodash: 4.17.21
       redent: 3.0.0
+      vitest: 0.25.3_jsdom@20.0.1
     dev: true
 
   /@testing-library/react/13.4.0_biqbaboplfbrettd7655fr4n2y:
